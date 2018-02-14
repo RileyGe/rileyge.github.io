@@ -19,7 +19,6 @@
 <div class="container py-5" style="max-width: 600px;" ng-controller="Main as main">
   <div>
     <h3>登录 & 退出</h3>
-    <a href="http://localhost">localhost</a>
     <b ng-show="isAuth()"><img src="//img.busy.org/@{{user.name}}?s=32" width="32" height="32"> @{{user.name}}</b>
     <button ng-show="isAuth()" class="ml-2 btn btn-secondary" type="submit" ng-click="logout()">
       退出

@@ -2,7 +2,7 @@ if(sc2.accessToken == null || sc2.accessToken == '')
 {
   sc2.init({
     app: 'steemthink.com',
-    callbackURL: 'http://localhost/callback.html',
+    callbackURL: 'https://rileyge.github.io/sc2test/callback.html',
     scope: ['vote', 'comment']
   });
 }
