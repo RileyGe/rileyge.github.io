@@ -7,6 +7,13 @@ if(sc2.accessToken == null || sc2.accessToken == '')
   });
 }
 angular.module('app', ['ipCookie'])
+.config(['$locationProvider', function($locationProvider){
+    $locationProvider.html5Mode({
+            enabled: true,
+            requireBase: true,
+            rewriteLinks: false
+        });
+  }])
   .controller('Main', function($scope, ipCookie) {
     $scope.loading = false;
     $scope.parentAuthor = 'skenan';
